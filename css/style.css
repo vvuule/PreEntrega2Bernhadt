@@ -1,0 +1,489 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/*INDEX/INICIO*/
+.contenedor-nav-pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+    font-size: large;
+    font-weight: 400;
+}
+
+.h ul li {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.h ul li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.h ul li a:hover {
+    color: firebrick;
+}
+
+.navbar-nav-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav-p .nav-item {
+    list-style: none;
+    display: inline-block;
+    align-content: center;
+    padding-right: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+.img_logo {
+    display: flex;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: firebrick;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.title {
+    color: rgb(190, 39, 39);
+    font-weight: 600;
+    text-align: center;
+}
+
+.slide img {
+    height: fit-content;
+    width: fit-content;
+    justify-items: center;
+}
+
+/**BIOGRAFIA*/
+.title_bio {
+    color: rgb(190, 39, 39);
+    text-decoration: solid;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.p {
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.sub_bio {
+    color: rgb(190, 39, 39);
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+.img_bio {
+    text-align: center;
+}
+
+/*DISCOGRAFIA*/
+.contenedor_playlist {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 280px 280px;
+    column-gap: 5px;
+}
+
+.grid-item-uno {
+    grid-column: 1/2;
+    grid-row: 1/3
+}
+
+.grid-item-uno {
+    display: grid;
+    place-items: center;
+}
+
+.grid-item-dos {
+    grid-column: 2/3;
+    grid-row: 1/3
+}
+
+.grid-item-dos {
+    display: grid;
+    place-items: center;
+}
+
+.title_discografia {
+    text-align: center;
+    padding: 0;
+    font-weight: 400;
+}
+
+.te_invitamos {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*GALERIA*/
+.row-row-cols-2 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding-bottom: 40px;
+}
+
+.title_galeria {
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*PROX SHOWS*/
+.title_fechas {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.fechas_shows {
+    text-align: center;
+    padding: 5px;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.fechas_shows a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.fechas_shows a:hover {
+    color: red;
+}
+
+.encabezado {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.entradas_d {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 30%;
+    text-decoration: none;
+    text-align: center;
+    background-color: red;
+    color: black;
+    margin-bottom: 1%;
+}
+
+.entradas_f {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    text-align: center;
+    background-color: red;
+    color: black;
+}
+
+main .entradas_d a {
+    text-decoration: none;
+}
+
+main .entradas_d a:hover {
+    background-color: transparent;
+    color: black
+}
+
+main .entradas_f a {
+    text-decoration: none;
+}
+
+main .entradas_f a:hover {
+    background-color: transparent;
+    color: black
+}
+
+/*FOOTER*/
+.redes {
+    justify-content: center;
+    width: 100%;
+    height: 100;
+    font-weight: 600;
+    margin-top: auto;
+    background-color: firebrick;
+    color: black;
+    text-align: center;
+}
+
+.fa-brands {
+    color: black;
+    justify-content: space-between;
+    height: 40px;
+    width: auto;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 1024px)
+/*computadora*/
+    {
+    body {
+        background-color: white;
+    }
+
+    /*GALERIA*/
+    .row-row-cols-2 {
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding-bottom: 40px;
+    }
+
+    .title_galeria {
+        text-align: center;
+        font-weight: 500;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px)
+/*tablet*/
+    {
+    body {
+        background-color: lightpink;
+    }
+
+    /*BIOGRAFIA*/
+    .title_bio {
+        color: rgb(190, 39, 39);
+        text-decoration: solid;
+        font-weight: 700;
+        padding-top: 20px;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .p {
+        font-weight: 300;
+        margin-left: 20px;
+        font-size: large;
+        text-align: justify;
+    }
+
+    .sub_bio {
+        color: rgb(190, 39, 39);
+        font-weight: 700;
+        margin-left: 50px;
+    }
+
+    .img_bio {
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+        width: 100%;
+        height: 90px;
+        font-weight: 600;
+        margin-top: auto;
+        background-color: firebrick;
+        color: black;
+        text-align: center;
+    }
+
+    .fa-brands {
+        color: black;
+        justify-content: space-between;
+        height: 40px;
+        width: auto;
+        padding-top: 10px;
+    }
+
+    /*GALERIA*/
+    .row-row-cols-2 {
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding-bottom: 40px;
+    }
+
+    .title_galeria {
+        text-align: center;
+        font-weight: 500;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 767px)
+/*celular*/
+    {
+
+    /*INDEX/INICIO*/
+    body {
+        background-color: lightcyan;
+    }
+
+    .contenedor-nav-pages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        background-color: black;
+        align-items: center;
+        padding: 10px;
+        font-size: large;
+        font-weight: 400;
+    }
+
+    .h ul li {
+        color: white;
+        text-decoration: none;
+        list-style: none;
+        padding-right: 10px;
+    }
+
+    .h ul li a {
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .h ul li a:hover {
+        color: firebrick;
+    }
+
+    .navbar-nav-p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-nav-p .nav-item {
+        list-style: none;
+        display: inline-block;
+        align-content: center;
+        padding-right: 15px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .img_logo {
+        display: flex;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .nav-link {
+        color: firebrick;
+        font-weight: 500;
+        font-size: x-large;
+    }
+
+    .container-fluid {
+        display: flex;
+        height: 100px;
+        align-items: center;
+    }
+
+    /*BIOGRAFIA*/
+    .title_bio {
+        color: rgb(190, 39, 39);
+        text-decoration: solid;
+        font-weight: 700;
+        padding-top: 20px;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .p {
+        font-weight: 300;
+        margin-left: 20px;
+        font-size: large;
+        text-align: justify;
+    }
+
+    .sub_bio {
+        color: rgb(190, 39, 39);
+        font-weight: 700;
+        margin-left: 50px;
+    }
+
+    .img_bio {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .redes {
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+        font-weight: 600;
+        margin-top: auto;
+        background-color: firebrick;
+        color: black;
+        text-align: center;
+    }
+
+    .fa-brands {
+        color: black;
+        justify-content: space-between;
+        height: 40px;
+        width: auto;
+        padding-top: 10px;
+
+    }
+
+    /*GALERIA*/
+    .row-row-cols-2 {
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding-bottom: 40px;
+    }
+
+    .title_galeria {
+        text-align: center;
+        font-weight: 500;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
